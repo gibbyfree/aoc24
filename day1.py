@@ -8,7 +8,6 @@ def part1(left: list[str], right: list[str]) -> int:
 
 
 def part2(left: list[str], right: list[str]) -> int:
-    # left, right = map(list, zip(*(s.split() for s in lines)))
     right_counts = Counter(right)
     return sum([right_counts[x] * int(x) if x in right_counts else 0 for x in left])
 
