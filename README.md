@@ -1,6 +1,8 @@
 # AOC24
-(avg perfcounter over 5 runs)
 
-| Day |   ns   |
-|-----|--------|
-| 1   | 1638783|
+`python3 perf.py day{x}.py`
+
+| Day |   ns    |
+|-----|---------|
+|  1  |  994824 |
+|  2  | 2444985 |
