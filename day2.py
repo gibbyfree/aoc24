@@ -1,6 +1,3 @@
-from time import perf_counter_ns
-
-
 def valid_pair(first: int, second: int, inc: bool) -> bool:
     return (
         (first != second)
@@ -35,11 +32,9 @@ def part2(lines: list[list[int]]) -> int:
 
 
 if __name__ == "__main__":
-    start = perf_counter_ns()
     with open("input/day2.txt") as f:
         lines_str = [x.rstrip() for x in f]
         lines = [list(map(int, x.split())) for x in lines_str]
 
     print(part1(lines))
     print(part2(lines))
-    print(f"Time: {perf_counter_ns() - start}ns")
